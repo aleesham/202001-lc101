@@ -1,9 +1,9 @@
 /* Reset
 -------------------------------------------------- */
 *, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 10;
+    padding: 10;
+    border: 10;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -37,6 +37,11 @@ h3, h4, h5 {
 img { /* common CSS for fluid rescaling, but respecting the image's actual pixel size */
     display: block;
     max-width: 100%;
+}
+
+img.resize {
+    max-height: 65%;
+    max-width: 65%
 }
 
 .remark-slide-content img { /* special requirement for slides: upscale images smaller than the available space to 100%, but don't leak out over the bottom */
@@ -213,7 +218,7 @@ body {
 .remark-code,
 .remark-inline-code {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .remark-inline-code {
